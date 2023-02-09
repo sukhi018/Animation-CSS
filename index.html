@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assesment</title>
+	<style type="text/css">
+		
+
+.box
+{
+height:250px;
+width:70%;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+justify-content: space-evenly;
+margin-top: 5rem;
+margin-bottom: 5rem;
+}
+.box1 {
+background-color:yellow;
+width: 200px;
+animation-name: anime1;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+transform: skewX(20deg);
+}
+
+.box2 {
+background-color:palevioletred;
+width: 200px;
+animation-name: anime2;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+transform: skewY(20deg);
+}
+
+.box3
+{
+	background-color:red;
+width: 200px;
+animation-name: anime3;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+transform: rotate(0deg);
+}
+#box4
+{
+		background-color:limegreen;
+width: 200px;
+animation-name: anime4;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+
+}
+#box5
+{
+background-color:black;
+width: 200px;
+animation-name: anime5;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+height: 100%;
+}
+#box6
+{
+background-color:orange;
+width: 200px;
+animation-name: anime6;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+height: 100%;
+}
+
+@keyframes anime1 {
+  0%   {transform: skewX(20deg);}
+  50%  { transform: skewX(-20deg);}
+  100% { transform: skewX(20deg);}
+}
+@keyframes anime2 {
+  0%   {transform: skewY(20deg);}
+  50%  { transform: skewY(-20deg);}
+  100% { transform: skewY(20deg);}
+}
+@keyframes anime3 {
+	to{ transform:rotate(0deg); }
+	from{ transform:rotate(-180deg);}
+
+}
+@keyframes anime4 {
+	  0%   {height:250px;}
+  50%  { height:100px;}
+  100% { height:250px;}
+}
+
+@keyframes anime5 {
+  0%   {width:200px;}
+  50%  { width:100px;}
+  100% { width:200px;}
+
+}
+
+@keyframes anime6 {
+  0%   {transform:rotate(90deg);}
+  50%  { transform:rotate(-90deg);}
+  100% { transform:rotate(90deg);}
+
+}
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<h1 style="text-align:center">Try to replicate this</h1>
+
+
+	<div class=box>
+			<div class=box1></div>
+			<div class=box1></div>
+			<div class=box1></div>
+	</div>
+	<div class=box>
+		<div class="box2"></div>
+		<div class="box2"></div>
+		<div class="box2"></div>
+	</div>
+
+	<div class="box">
+		<div class="box3"></div>
+		<div class="box3"></div>
+		<div class="box3"></div>
+	</div>
+
+	<div class="box">
+		<div>
+			<div id=box4></div>
+			
+		</div>
+
+		<div>
+			<div id=box5></div>
+		</div>
+
+		<div>
+
+		<div id=box6></div>
+			
+		</div>
+
+	</div>
+	<h1 style="text-align:center"><a href="trans.html">Lets go and try another things</a></h1>
+
+</body>
+</html>

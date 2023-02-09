@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assesment</title>
+
+	<style>
+		.box
+		{
+		height: 200px;
+		width: 200px;
+		background-color: yellow;
+		}
+
+		#box1{
+		transition: width 2s;
+		}
+
+
+
+		#box2
+		{
+		transition:width 2s, height 2s 2s;
+		}
+
+		#box2:hover
+		{
+		width: 400px;
+		height: 400px;
+		}
+
+		#box3{
+		transition: width 2s linear;
+		}
+
+		#box4
+		{
+		transition: width 2s ease;
+		}
+		#box5
+		{
+		transition: width 2s ease-in;
+		}
+		#box6
+		{
+		transition: width 2s ease-out;
+		}
+		#box7
+		{
+		transition: width 2s ease-in-out;
+		}
+
+		.witch:hover {
+		width: 400px;
+		}
+		li
+		{
+			margin-bottom:1rem;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div style=width:35%;margin-left:auto;margin-right:auto>
+		<ol style=width:50%;margin-left:auto;margin-right:auto>
+		<li>
+				<div class="box witch" id=box1>
+		
+				</div>
+		</li>
+		<li>
+			<div class="box" id="box2">
+				
+			</div>
+		</li>
+		<li>
+			<div class="box witch" id="box3"></div>
+		</li>
+		<li><div class="box witch" id="box4"></div></li>
+		<li>
+			<div class="box witch" id="box5"></div>
+		</li>
+		<li>
+			<div class="box witch" id="box6"></div>
+		</li>
+		<li>
+			<div class="box witch" id="box7"></div>
+		</li>
+
+	</ol>
+	</div>
+	
+	<div style="display:flex;justify-content: space-around;">
+		<div>
+			<h1><a href="index.html">BACK</a></h1>
+			
+		</div>
+		<div>
+	<h1><a href="final.html">NEXT</a></h1>
+			
+		</div>
+	</div>
+</body>
+</html>

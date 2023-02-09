@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Assesment
+	</title>
+	<style>
+		body
+		{
+		margin:0px;
+		padding: 0px;
+		}
+		.clouds
+		{
+		background-image: url(./sky.jpg);
+		width: 100%;
+		height: 100vh;
+		}
+		.city
+		{
+		height: 60vh;
+		width: 5000vh;
+		z-index: 1;
+		background-image: url(./city.png);
+		background-repeat: repeat-x;
+		animation: city 20s linear infinite;
+		background-size: 1050px 42vw;
+	}
+
+		.road
+		{
+		background-image: url(./road.jpg);
+		background-repeat: x-repeat;
+		height: 30vh;
+		width: 5000vh;
+		animation: road 20s linear infinite;
+		}
+		.car
+		{
+		margin-top: -26rem;
+		background-image: url(./car.png);
+		background-repeat: no-repeat;
+		height: 300px;
+		width: 82%;
+		position: absolute;
+		animation: car 0.4s linear infinite;
+		margin-left:14rem;
+		}
+
+		.wheel
+		{
+		background-image: url(./wheel.png);
+		background-size: cover;
+		height: 184px;
+		width: 183px;
+		z-index: 1;
+		position: absolute;
+		animation: anime3 0.1s infinite linear;
+
+		transform: rotate(0deg);
+		curve
+		}
+
+		.sun
+		{
+		background-image: url(./sun.png);
+		height: 200px;
+		width: 200px;
+		background-size: cover;
+		margin-top: -50rem;
+		position: absolute;
+		margin-left: 70rem;
+		animation: sun 10s infinite linear;
+		}
+
+
+
+		@keyframes anime3 {
+		to{ transform:rotate(0deg); }
+		from{ transform:rotate(180deg);}
+
+		}
+		@keyframes car {
+		100% {
+		transform: translate(0,-2px);
+		}}
+
+		@keyframes road {
+		100% {
+		transform: translate(-500vw);
+		}
+		}
+
+		@keyframes city {
+		100% {
+		transform: translate(-1000px);
+		}
+		}
+
+		@keyframes sun {
+		100% {
+		transform: translate(-100px);
+		}
+			
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="clouds">
+		<div style="display:flex;width:50%;margin-left: auto;margin-right: auto;justify-content: center;">
+			<div style='padding: 5px;box-sizing: border-box;background-color:orange;text-align: center;width: 33.3%;margin-left:4px'>
+				<h1>HAPPY</h1>
+			</div>
+
+			<div style='padding: 5px;box-sizing: border-box;background-color:white;text-align: center;width: 33.3%;margin-left:4px'>
+				<h1>REPUBLIC</h1>
+			</div>
+			<div style='padding: 5px;box-sizing: border-box;background-color:green;text-align: center;width: 33.3%;margin-left:4px'>
+				<h1>DAY</h1>
+			</div>
+		</div>
+		<div class="city">
+			
+		</div>
+
+		<div class="road">
+			
+		</div>
+
+		<div class=car>
+			
+		</div>
+
+		<div class="wheel" style='margin-left: 19.4rem !important;
+    margin-top: -13.1rem;
+'></div>
+		<div class="wheel" style="margin-left: 57.6rem !important;
+    margin-top: -13.4rem;
+"></div>
+
+
+
+		
+
+	</div>
+
+<div class=sun>
+	
+</div>
+</body>
+</html>
